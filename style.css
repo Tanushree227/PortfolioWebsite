@@ -30,7 +30,7 @@ nav
 }
 .logo
 {
-    width: 140px;
+    width: 150px;
 }
 nav ul li
 {
@@ -133,4 +133,13 @@ nav ul li a:hover::after
 .tab-links.active-link::after
 {
     width: 50%;
+}
+.tab-contents ul li
+{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span
+{
+    font-size: 14px;
 }
