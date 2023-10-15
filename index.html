@@ -31,13 +31,13 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ullam mollitia maxime deserunt! Nostrum sit fuga velit aliquid cumque, itaque cum eveniet provident vero culpa optio quia incidunt, eaque rerum!</p>
+                    <p>To secure a responsible career opportunity to fully utillize my training and skills, and also looking for learning new things in the IT field, while making a significant contribution to the success of organizations.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>C</span></li>
                             <li><span>C++</span></li>
@@ -46,9 +46,45 @@
                             <li><span>HTML-CSS</span></li>
                         </ul>
                     </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>December, 2018</span><br>HRM Trainee at The Tinplate Company of India.</li>
+                            <li><span>July, 2021</span><br>UI/UX Industrial Training at LernX</li>
+                            <li><span>01/06/2023 - 31/07/2023</span><br>Intern at Teachnook</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015</span><br>10th, Matriculation</li>
+                            <li><span>2018</span><br>12th, Intermediate</li>
+                            <li><span>2021</span><br>Graduation, BCA(Bachelor's of Computer Application)</li>
+                            <li><span>2024</span><br>Post-Graduation, MCA(Master's of Computer Application)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
