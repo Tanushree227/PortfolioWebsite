@@ -267,3 +267,57 @@ nav ul li a:hover::after
 {
     background: #ffc300;
 }
+
+.contact-left p
+{
+    margin-top: 30px;
+}
+.contact-left a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+.btn.btn2
+{
+    display: inline-block;
+    background: #ffc300;
+}
+.contact-right form
+{
+    width: 100%;
+}
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #495057;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    background-color: #495057;
+    margin-top: 20px;
+}
+
